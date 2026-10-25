@@ -1,0 +1,6 @@
+target/
+node_modules/
+dist/
+.vercel/
+# Program deploy keypair: keep a private copy, never commit it
+program/deploy/*keypair*.json

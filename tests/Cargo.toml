@@ -1,0 +1,10 @@
+[package]
+name = "quantities-integration"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+quantities = { path = "../program", features = ["no-entrypoint"] }
+litesvm = "0.6"
+solana-sdk = "2.2"

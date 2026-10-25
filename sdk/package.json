@@ -1,0 +1,16 @@
+{
+  "name": "@quantities/sdk",
+  "version": "0.1.0",
+  "description": "Client SDK for Quantities quantum-resistant Solana vaults",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.mjs"
+  },
+  "dependencies": {
+    "@noble/hashes": "^1.8.0",
+    "@solana/web3.js": "^1.98.0",
+    "buffer": "^6.0.3"
+  },
+  "license": "Apache-2.0"
+}

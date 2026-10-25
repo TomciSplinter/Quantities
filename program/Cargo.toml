@@ -1,0 +1,24 @@
+[package]
+name = "quantities"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.79"
+description = "Quantities: quantum-resistant Solana vaults secured by Winternitz one-time signatures"
+license = "Apache-2.0"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[features]
+no-entrypoint = []
+
+[dependencies]
+solana-program = "2.2"
+
+[dev-dependencies]
+hex = "0.4"
+
+[profile.release]
+overflow-checks = true
+lto = "fat"
+codegen-units = 1
